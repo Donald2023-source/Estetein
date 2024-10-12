@@ -3,7 +3,7 @@ import Home from './Pages/LandingPage/Home'
 
 const page = () => {
   return (
-    <div className='lg:p-12 p-8'>
+    <div className='lg:p-12 py-8 px-4'>
       <Home/>
     </div>
   )

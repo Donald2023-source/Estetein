@@ -19,7 +19,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="py-5 px-8 lg:px-12">
+    <header className="py-5 px-4 lg:px-12">
       <nav className='flex items-center justify-between'>
         <Link href={'/'}>
           <span className='flex items-center gap-2'>
@@ -29,7 +29,7 @@ const Navbar = () => {
         </Link>
         
         <div className={nav ? 
-          'flex lg:flex-row flex-col bg-black/90 lg:h-fit h-full items-center lg:bg-transparent lg:relative fixed left-0 mx-auto right-0 justify-center top-0 gap-10 ' 
+          'flex lg:flex-row flex-col bg-black lg:h-fit h-full items-center lg:bg-transparent lg:relative fixed left-0 mx-auto right-0 justify-center top-0 gap-10 ' 
           : 
           'hidden lg:flex gap-20 h-full'}>
           {navLinks.map((link, idx) => (
