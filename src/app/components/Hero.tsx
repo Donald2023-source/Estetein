@@ -24,7 +24,7 @@ const Hero = () => {
     <div>
         <div className='flex lg:flex-row md:flex-row flex-col-reverse lg:items-start items-center'>
             <div className='flex flex-col gap-8 mt-5'>
-                <h2 className='md:text-4xl text-3xl lg:text-5xl lg:w-[70%] leading-relaxed'>Discover Your Dream Propery with Estatein</h2>
+                <h2 className='md:text-4xl text-3xl lg:text-5xl lg:w-[70%] leading-relaxed'>Discover Your Dream Propery with Estatein.</h2>
                 <p className='text-gray-500 leading-relaxed'>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
 
                 <span className='flex items-center gap-10'>
@@ -34,7 +34,7 @@ const Hero = () => {
 
                 <div className='flex lg:flex-nowrap md:flex-nowrap flex-wrap items-center gap-3 py-6'>
                     {
-                        heroStatsData.map((data, idx) => (
+                        heroStatsData.map((data, idx) => ( 
                             <div className='border lg:px-3 sm:px-2 px-5 py-6 lg:text-start md:text-start text-center rounded-lnjg w-[80%] flex-grow cursor-pointer hover:scale-105 transition-all bg-primary/10' key={idx}>
                                 <h2 className='text-2xl font-bold'>{data.num}</h2>
                                 <p className='text-gray-500 lg:text-md md:text-xs text-sm'>{data.text}</p>
