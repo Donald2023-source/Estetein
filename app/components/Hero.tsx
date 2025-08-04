@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -45,7 +46,7 @@ const Hero = () => {
           <div className="flex lg:flex-nowrap md:flex-nowrap flex-wrap items-center gap-3 py-6">
             {heroStatsData.map((data, idx) => (
               <div
-                className="border lg:px-3 sm:px-2 px-5 py-6 lg:text-start md:text-start text-center rounded-lnjg w-[80%] flex-grow cursor-pointer hover:scale-105 transition-all bg-primary/10"
+                className="shadow shadow-white/20 border-x border-gray-500 rounded-xl lg:px-3 sm:px-2 px-5 py-6 lg:text-start md:text-start text-center w-[80%] flex-grow cursor-pointer hover:scale-105 transition-all hover:shadow-xl bg-primary/10"
                 key={idx}
               >
                 <h2 className="text-2xl font-bold">{data.num}</h2>
