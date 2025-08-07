@@ -20,7 +20,7 @@ export default defineField({
       type: "array",
     }),
 
-    defineField(({
+    defineField({
       
     }))
 
