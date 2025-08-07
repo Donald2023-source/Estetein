@@ -15,7 +15,7 @@ export default defineField({
     defineField({
       name: "Location",
       title: "Location",
-      of: [{ type: "reference", to: [{ type: "state" }] }],
+      of: [{ type: "reference", to: [{ type: "location" }] }],
       type: "array",
     }),
 
@@ -49,8 +49,14 @@ export default defineField({
     }),
 
     defineField({
-      name: "price",
-      title: "Price",
+      name: "buying_price",
+      title: "Buying Price",
+      type: "number",
+    }),
+
+    defineField({
+      name: "rent_price",
+      title: "Rent Price",
       type: "number",
     }),
 
