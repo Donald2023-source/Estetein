@@ -7,10 +7,11 @@ export default defineField({
 
   fields: [
     defineField({
-      name: "property_name",
+      name: "name",
       title: "Name of Property",
       type: "string",
     }),
+    
 
     defineField({
       name: "Location",
@@ -18,6 +19,10 @@ export default defineField({
       of: [{ type: "reference", to: [{ type: "location" }] }],
       type: "array",
     }),
+
+    defineField(({
+      
+    }))
 
     defineField({
       name: "slug",
