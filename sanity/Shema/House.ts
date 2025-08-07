@@ -11,7 +11,6 @@ export default defineField({
       title: "Name of Property",
       type: "string",
     }),
-    
 
     defineField({
       name: "Location",
@@ -23,7 +22,7 @@ export default defineField({
     defineField({
       name: "description",
       title: "Description",
-      type: "string"
+      type: "string",
     }),
 
     defineField({
