@@ -6,6 +6,14 @@ export default defineField({
   type: "document",
 
   fields: [
+    
+    defineField({
+      name: "title",
+      title: "Title",
+      type: "string",
+      validation: (rule) => rule.required(),
+    }),
+
     defineField({
       name: "name",
       title: "Name of Property",
