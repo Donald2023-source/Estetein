@@ -22,7 +22,8 @@ export default defineField({
     defineField({
       name: "description",
       title: "Description",
-      type: "string",
+      type: "array",
+      of: [{ type: "block" }],
     }),
 
     defineField({
