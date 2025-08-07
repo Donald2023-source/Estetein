@@ -7,7 +7,7 @@ export default defineField({
 
   fields: [
     defineField({
-      name: "Name of Property",
+      name: "property_name",
       title: "Name of Property",
       type: "string",
     }),
@@ -15,24 +15,35 @@ export default defineField({
     defineField({
       name: "Location",
       title: "Location",
-      of: [{ type: "reference", to: [{ type: "States" }] }],
+      of: [{ type: "reference", to: [{ type: "state" }] }],
       type: "array",
     }),
 
     defineField({
-        name: "number of rooms",
-        title: "Number of rooms",
-        type: "number"
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "title",
+        maxLength: 96,
+      },
+      validation: (rule) => rule.required(),
     }),
 
     defineField({
-        name: "number of bathrooms", 
-        title: "Number of Bathrooms", 
-        type: "number"
+      name: "number_of_rooms",
+      title: "Number of rooms",
+      type: "number",
     }),
 
     defineField({
-      name: "describe location",
+      name: "number_of_bathrooms",
+      title: "Number of Bathrooms",
+      type: "number",
+    }),
+
+    defineField({
+      name: "describe_location",
       title: "Describe Location",
       type: "string",
     }),
@@ -42,5 +53,22 @@ export default defineField({
       title: "Price",
       type: "number",
     }),
+
+    defineField({
+      name: "image",
+      title: "Image",
+      description: "Remember that the first image would be used as a barner",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    }),
   ],
+  preview: {
+    select: {
+      title: "title",
+      media: "image",
+      position: "position",
+    },
+  },
 });

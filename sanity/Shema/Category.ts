@@ -8,7 +8,7 @@ export default defineField({
 
   fields: [
     defineField({
-      name: "property type",
+      name: "property_type",
       title: "What type of property is this?",
       type: "string",
     }),
