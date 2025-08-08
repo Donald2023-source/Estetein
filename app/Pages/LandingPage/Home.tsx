@@ -6,6 +6,10 @@ const Home = () => {
     <div>
         <Hero/>
         <Link href={'/studio'}>Studio</Link>
+        
+        <div>
+          <h2>Featured Properties</h2>
+        </div>
     </div>
   )
 }
