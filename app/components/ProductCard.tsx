@@ -1,3 +1,5 @@
+import { urlFor } from "@/sanity/lib/image";
+import Image from "next/image";
 import React from "react";
 
 interface ProductCardProps {
@@ -11,12 +13,19 @@ interface ProductCardProps {
     number_of_bathrooms: number;
     description: string;
     describe_location: string;
+    image: [
+      asset: {
+        _ref: string
+      }
+    ]
   };
 }
 const ProductCard = ({ item }: ProductCardProps) => {
   return <div>  
     <div>
-        {item?.name}
+       <div>
+        <Image src={urlFor(item?.image)} alt="Product Image" width={500} height={300} className="w-full h-64 object-cover rounded-lg" />
+       </div>
         
     </div>
   </div>;
